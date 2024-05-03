@@ -1,0 +1,32 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: run_at
+    type: timestamp
+    nullable: false
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: col_name
+    type: string
+    nullable: false
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: count_null
+    type: long
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: count_not_null
+    type: long
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []

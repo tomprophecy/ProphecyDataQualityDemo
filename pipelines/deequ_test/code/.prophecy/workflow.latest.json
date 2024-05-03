@@ -1,0 +1,1089 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1"
+    },
+    "codeGenConfiguration" : {
+      "editableConfig" : true
+    },
+    "id" : "1",
+    "uri" : "pipelines/deequ_test",
+    "language" : "python",
+    "fabricId" : "8875",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "maciejdemos.dataquality.functions",
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions" ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ {
+          "name" : "dq_audit",
+          "kind" : {
+            "type" : "record",
+            "fields" : [ {
+              "name" : "stack",
+              "kind" : {
+                "type" : "record",
+                "fields" : [ {
+                  "name" : "column",
+                  "kind" : {
+                    "type" : "string",
+                    "value" : ""
+                  },
+                  "optional" : false,
+                  "isWorkflowNodeConfiguration" : false,
+                  "isReferenced" : false
+                } ]
+              },
+              "optional" : false,
+              "isWorkflowNodeConfiguration" : true,
+              "isReferenced" : false
+            } ]
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : true,
+          "isReferenced" : false
+        } ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ {
+      "type" : "coordinates",
+      "modifiedAt" : "2024-02-28T05:11:37.911Z",
+      "coordinates" : "com.amazon.deequ:deequ:2.0.1-spark-3.2",
+      "name" : "mvn_deequ",
+      "description" : "",
+      "enabled" : true,
+      "entityName" : "Deequ",
+      "id" : "Fk6FVfy7xTjUqve2e5tvD",
+      "createdAt" : "2024-02-28T05:11:37.911Z",
+      "entity" : "Gem",
+      "exclusions" : [ ],
+      "addToPipeline" : true,
+      "editable" : true
+    }, {
+      "type" : "pypi",
+      "modifiedAt" : "2024-02-28T05:11:15.709Z",
+      "package" : "pydeequ",
+      "name" : "pydeequ",
+      "description" : "",
+      "enabled" : true,
+      "entityName" : "Deequ",
+      "id" : "L4R84GkDV__Vrq2w1SqEL",
+      "createdAt" : "2024-02-28T05:11:15.709Z",
+      "entity" : "Gem",
+      "addToPipeline" : true,
+      "editable" : true
+    } ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "12654",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "12655",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "deequ_test",
+    "configurationVersion" : "v1"
+  },
+  "connections" : [ {
+    "id" : "IEDcw8Sf",
+    "source" : "gK5z8xvUKyOFOAa4I2mqN$$MJz1vB9svzpxHkhdhQYW8",
+    "sourcePort" : "G1i4QcUx1cnyINPqRp8-X$$qbFT8ZWgH17AJeHkcNsni",
+    "target" : "mAtv9pni",
+    "targetPort" : "dwGLb3yY"
+  }, {
+    "id" : "M4UL4LGBdq_5-RfXw9ObA",
+    "source" : "mAtv9pni",
+    "sourcePort" : "csUNtxcc",
+    "target" : "4fDC2Bdc0-W903_DK7PQr$$VfhnWVZ4HlmJUB4tguRYO",
+    "targetPort" : "yKnXsCQkltZQU6tJai8Uq$$TyUO3Nltvp9un7iSsBswS"
+  }, {
+    "id" : "zdcGjz8z8qjBSDhsfZG3u",
+    "source" : "mAtv9pni",
+    "sourcePort" : "csUNtxcc",
+    "target" : "2kZYrSzfhBN4uEcsZEUA7$$ydF1wOqOL4yHoOngBRwTw",
+    "targetPort" : "l1dXSzLYf665g2xtdcLWE$$6AMBPxXM42rtRS2X50GGX"
+  } ],
+  "processes" : {
+    "4fDC2Bdc0-W903_DK7PQr$$VfhnWVZ4HlmJUB4tguRYO" : {
+      "id" : "4fDC2Bdc0-W903_DK7PQr$$VfhnWVZ4HlmJUB4tguRYO",
+      "component" : "Deequ",
+      "metadata" : {
+        "label" : "deequ_text_column_completeness_check",
+        "slug" : "deequ_text_column_completeness_check",
+        "x" : -140,
+        "y" : -80,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "yKnXsCQkltZQU6tJai8Uq$$TyUO3Nltvp9un7iSsBswS",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "TEXT_COLUMN",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "NULL_COLUMN",
+              "type" : "void",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "HJ7crzUfRJiQMjOQ_vice$$_h44KH0f1_6rAMtU5Ry8x",
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "isStreaming" : false
+        }, {
+          "id" : "jsQAD0Gg8Rjxn4wbTYHuC$$Zlkbi9Wlta-s9lN8fnQHL",
+          "slug" : "out1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true,
+        "autoUpdateOnRun" : true
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "rulesColumns" : [ {
+          "colName" : "TEXT_COLUMN",
+          "ruleName" : "isComplete",
+          "extraParams" : ""
+        } ]
+      },
+      "componentInfo" : {
+        "gemId" : "gems/Deequ",
+        "projectName" : "data_quality"
+      }
+    },
+    "2kZYrSzfhBN4uEcsZEUA7$$ydF1wOqOL4yHoOngBRwTw" : {
+      "id" : "2kZYrSzfhBN4uEcsZEUA7$$ydF1wOqOL4yHoOngBRwTw",
+      "component" : "Subgraph",
+      "metadata" : {
+        "label" : "dq_audit",
+        "slug" : "dq_audit",
+        "x" : -140,
+        "y" : -320,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "l1dXSzLYf665g2xtdcLWE$$6AMBPxXM42rtRS2X50GGX",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "TEXT_COLUMN",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "NULL_COLUMN",
+              "type" : "void",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "packageName" : "prophecy",
+        "externalId" : "subgraphs/dq_audit",
+        "name" : "dq_audit"
+      },
+      "connections" : [ {
+        "id" : "46doSnvhzmkJs6xvj7bpw",
+        "source" : "2kZYrSzfhBN4uEcsZEUA7$$ydF1wOqOL4yHoOngBRwTw",
+        "sourcePort" : "l1dXSzLYf665g2xtdcLWE$$6AMBPxXM42rtRS2X50GGX",
+        "target" : "FBDL8PVqCu0Io9HRzKqwW$$r8ekzLvoBdbQN9kK4Pj6h",
+        "targetPort" : "toEb1WjYwYJLKYdJbb-07$$qoT7jBNwFhae89aeXsgCD"
+      }, {
+        "id" : "s7uQEBBHCQbUhi1-sLVNs$$7tqk_G__YTqFansdk-Ooi",
+        "source" : "FBDL8PVqCu0Io9HRzKqwW$$r8ekzLvoBdbQN9kK4Pj6h",
+        "sourcePort" : "D0AqZv0ytGjbvvELFSaHu$$i5XLuYfuOwnKjG4-Clz61",
+        "target" : "nXZa-KsdAsyiyG0uhQZ7z$$9k_kZBEv9NF-I03DTkycH",
+        "targetPort" : "mPqP00Hr6d3FWzH3CxwDF$$Q-_e1rHykp6oOhZUT2dRM"
+      }, {
+        "id" : "CQvSt-e4zSs1B_CCS0lY-",
+        "source" : "2kZYrSzfhBN4uEcsZEUA7$$ydF1wOqOL4yHoOngBRwTw",
+        "sourcePort" : "l1dXSzLYf665g2xtdcLWE$$6AMBPxXM42rtRS2X50GGX",
+        "target" : "nXZa-KsdAsyiyG0uhQZ7z$$9k_kZBEv9NF-I03DTkycH",
+        "targetPort" : "v7809kY70zJ6GTHpqmyFY$$2BogYob-4AVResUCcEfGc"
+      }, {
+        "id" : "aMGhqR1suxes9HEjXtquf$$dWOLJg2GUOBn0sLR7psZw",
+        "source" : "nXZa-KsdAsyiyG0uhQZ7z$$9k_kZBEv9NF-I03DTkycH",
+        "sourcePort" : "MuhBBYhG3pEJPXQaTDkR4$$nVYYod43LkiF0f5YkI4j9",
+        "target" : "yFjebsBXW_7SmqFK6u8gc$$oOyqdKct6s4zqqlD4eDKe",
+        "targetPort" : "ALxYciHvGeaKCK_vittkZ$$A-vYEqfXwoZzxiv5dymzI"
+      }, {
+        "id" : "spqnQolt9Gt38jDmh3obw$$K1IS3CYMLCsX-QtaF_cEJ",
+        "source" : "yFjebsBXW_7SmqFK6u8gc$$oOyqdKct6s4zqqlD4eDKe",
+        "sourcePort" : "8a1cvB-dqqOMWgsGjI2HG$$FzVDyzvfsT9Q109z-PxH7",
+        "target" : "c2Qs74RGMaIayvEWZSjMr$$2jvPTGkxHCXygjypbAnlN",
+        "targetPort" : "N82_vYueM3Kz89u6cdp3x$$NtK4lHbOrJG_Lp0Nec4fW"
+      }, {
+        "id" : "6eJgd0jYfeNXLh7WRSjYe$$kg_WlifLtGZRXXFRCkAFj",
+        "source" : "c2Qs74RGMaIayvEWZSjMr$$2jvPTGkxHCXygjypbAnlN",
+        "sourcePort" : "EZP8NOFcmmrhPy8cUMprl$$tX4kCyl78QBvm1kZljyM0",
+        "target" : "IHy45cTTpixhGP65M47Rm$$OLXyUUPr6vHacmHTTfQ6_",
+        "targetPort" : "EpXhiZJw84b0D0hl358Im$$7a_I0iNftY6wB0GQPBmkQ"
+      } ],
+      "processes" : {
+        "nXZa-KsdAsyiyG0uhQZ7z$$9k_kZBEv9NF-I03DTkycH" : {
+          "id" : "nXZa-KsdAsyiyG0uhQZ7z$$9k_kZBEv9NF-I03DTkycH",
+          "component" : "TableIterator",
+          "metadata" : {
+            "label" : "stack",
+            "slug" : "stack",
+            "x" : -780,
+            "y" : -140,
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false,
+            "isImported" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "mPqP00Hr6d3FWzH3CxwDF$$Q-_e1rHykp6oOhZUT2dRM",
+              "slug" : "metadata_columns",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "column",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "isStreaming" : false
+            }, {
+              "id" : "v7809kY70zJ6GTHpqmyFY$$2BogYob-4AVResUCcEfGc",
+              "slug" : "in1",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "TEXT_COLUMN",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "NULL_COLUMN",
+                  "type" : "void",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "isStreaming" : false
+            } ],
+            "outputs" : [ {
+              "id" : "MuhBBYhG3pEJPXQaTDkR4$$nVYYod43LkiF0f5YkI4j9",
+              "slug" : "out0"
+            } ],
+            "selectedInputFields" : [ ],
+            "isCustomOutputSchema" : false,
+            "autoUpdateOnRun" : false
+          },
+          "properties" : {
+            "metagemProperty" : {
+              "availableColumnNames" : [ "column" ],
+              "availableConfigFieldNames" : [ "column" ],
+              "numberOfThreads" : "5",
+              "maxIteration" : "1000",
+              "parallelismEnabled" : false,
+              "configToColumnMap" : [ {
+                "configName" : "column",
+                "columnName" : "column"
+              } ]
+            }
+          },
+          "connections" : [ {
+            "id" : "l0G2fA8RpuDQdP46aoJtl",
+            "source" : "nXZa-KsdAsyiyG0uhQZ7z$$9k_kZBEv9NF-I03DTkycH",
+            "sourcePort" : "mPqP00Hr6d3FWzH3CxwDF$$Q-_e1rHykp6oOhZUT2dRM",
+            "target" : "Z4OLks_XpIK9ayv4IgmSq$$kdZN31Aic62DqLxrf6Tro",
+            "targetPort" : "bupGiCj1fX-OXPNMD-bLD$$aO-vqpF3PwbpyYcYo4CJj",
+            "visualProperty" : {
+              "isHidden" : false
+            }
+          }, {
+            "id" : "UOaIA66RXWVLU3456z2ti$$0ZCxjruXvIRJfXA8iVMT8",
+            "source" : "nXZa-KsdAsyiyG0uhQZ7z$$9k_kZBEv9NF-I03DTkycH",
+            "sourcePort" : "v7809kY70zJ6GTHpqmyFY$$2BogYob-4AVResUCcEfGc",
+            "target" : "Z4OLks_XpIK9ayv4IgmSq$$kdZN31Aic62DqLxrf6Tro",
+            "targetPort" : "wg2bp1W6dOCdTT6QRajlz$$3Y0AYfwR412zdxVIRqSyy",
+            "visualProperty" : {
+              "isHidden" : false
+            }
+          }, {
+            "id" : "QchtciievmczApOT7UfC_$$U5_OxsH3V0xjWOOmy49f7",
+            "source" : "Z4OLks_XpIK9ayv4IgmSq$$kdZN31Aic62DqLxrf6Tro",
+            "sourcePort" : "1p8Nj8tqipEe4ohvGhXJp$$GnMnQAksFqP338eADBV9l",
+            "target" : "bVRSuwc4G7pWE0lBlANab$$_9OaWHbHARdVNESdVqidY",
+            "targetPort" : "NnH0byB2_7zg0pOf_3PHl$$WyMNJ6w4k7i5pO1zUHXB8",
+            "visualProperty" : {
+              "isHidden" : false
+            }
+          }, {
+            "id" : "atyYiKcWXNpL0S4EZwVqo$$R8GZvM0lnWT1OruSwskGy",
+            "source" : "dGoiAi35Yjk_Hw-4Dfw4c$$AwlEPkDxrcy13rieQgTpO",
+            "sourcePort" : "ENDSyKEOJIgClx2XZKiaq$$fvmXla4z4lRk42wJpnCcM",
+            "target" : "nXZa-KsdAsyiyG0uhQZ7z$$9k_kZBEv9NF-I03DTkycH",
+            "targetPort" : "MuhBBYhG3pEJPXQaTDkR4$$nVYYod43LkiF0f5YkI4j9",
+            "visualProperty" : {
+              "isHidden" : false
+            }
+          }, {
+            "id" : "wCsR-PHAh7HALrU2cZGzx",
+            "source" : "bVRSuwc4G7pWE0lBlANab$$_9OaWHbHARdVNESdVqidY",
+            "sourcePort" : "m62vk90IBJklX7GNcCVMw$$krjFL5dUCW0M7rjRswz-B",
+            "target" : "dGoiAi35Yjk_Hw-4Dfw4c$$AwlEPkDxrcy13rieQgTpO",
+            "targetPort" : "1JVKwcIMdxKIe85Xsi8oc$$g4mWVfJPizlFvbIgMn5aI",
+            "visualProperty" : {
+              "isHidden" : false
+            }
+          } ],
+          "processes" : {
+            "Z4OLks_XpIK9ayv4IgmSq$$kdZN31Aic62DqLxrf6Tro" : {
+              "id" : "Z4OLks_XpIK9ayv4IgmSq$$kdZN31Aic62DqLxrf6Tro",
+              "component" : "ControlFlowInput",
+              "metadata" : {
+                "label" : "TableIterator_Input",
+                "slug" : "TableIterator_Input",
+                "x" : 120,
+                "y" : 120,
+                "phase" : 0,
+                "cache" : false,
+                "detailedStats" : false,
+                "isImported" : false,
+                "visualProperty" : {
+                  "isHidden" : false
+                }
+              },
+              "ports" : {
+                "inputs" : [ {
+                  "id" : "bupGiCj1fX-OXPNMD-bLD$$aO-vqpF3PwbpyYcYo4CJj",
+                  "slug" : "metadata_columns",
+                  "schema" : {
+                    "type" : "struct",
+                    "fields" : [ {
+                      "name" : "column",
+                      "type" : "string",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    } ]
+                  },
+                  "isStreaming" : false
+                }, {
+                  "id" : "wg2bp1W6dOCdTT6QRajlz$$3Y0AYfwR412zdxVIRqSyy",
+                  "slug" : "in1",
+                  "schema" : {
+                    "type" : "struct",
+                    "fields" : [ {
+                      "name" : "TEXT_COLUMN",
+                      "type" : "string",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    }, {
+                      "name" : "NULL_COLUMN",
+                      "type" : "void",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    } ]
+                  },
+                  "isStreaming" : false
+                } ],
+                "outputs" : [ {
+                  "id" : "1p8Nj8tqipEe4ohvGhXJp$$GnMnQAksFqP338eADBV9l",
+                  "slug" : "out0"
+                } ],
+                "selectedInputFields" : [ ],
+                "isCustomOutputSchema" : false,
+                "autoUpdateOnRun" : false
+              },
+              "properties" : {
+                "minNumberOfInPorts" : 1,
+                "allowOutportAddDelete" : true,
+                "description" : "",
+                "allowInportAddDelete" : true,
+                "minNumberOfOutPorts" : 0,
+                "allowOutportRename" : true,
+                "allowInportRename" : true
+              },
+              "componentInfo" : {
+                "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/ControlFlowInput",
+                "projectName" : "ProphecySparkBasicsPython"
+              }
+            },
+            "dGoiAi35Yjk_Hw-4Dfw4c$$AwlEPkDxrcy13rieQgTpO" : {
+              "id" : "dGoiAi35Yjk_Hw-4Dfw4c$$AwlEPkDxrcy13rieQgTpO",
+              "component" : "ControlFlowOutput",
+              "metadata" : {
+                "label" : "TableIterator_Output",
+                "slug" : "TableIterator_Output",
+                "x" : 520,
+                "y" : 120,
+                "phase" : 0,
+                "cache" : false,
+                "detailedStats" : false,
+                "isImported" : false,
+                "visualProperty" : {
+                  "isHidden" : false
+                }
+              },
+              "ports" : {
+                "inputs" : [ {
+                  "id" : "1JVKwcIMdxKIe85Xsi8oc$$g4mWVfJPizlFvbIgMn5aI",
+                  "slug" : "in0",
+                  "schema" : {
+                    "type" : "struct",
+                    "fields" : [ {
+                      "name" : "col_name",
+                      "type" : "string",
+                      "nullable" : false,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    }, {
+                      "name" : "value",
+                      "type" : "string",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    } ]
+                  },
+                  "isStreaming" : false
+                } ],
+                "outputs" : [ {
+                  "id" : "ENDSyKEOJIgClx2XZKiaq$$fvmXla4z4lRk42wJpnCcM",
+                  "slug" : "out0"
+                } ],
+                "selectedInputFields" : [ ],
+                "isCustomOutputSchema" : false,
+                "autoUpdateOnRun" : false
+              },
+              "properties" : {
+                "minNumberOfInPorts" : 0,
+                "allowOutportAddDelete" : true,
+                "description" : "",
+                "allowInportAddDelete" : true,
+                "minNumberOfOutPorts" : 0,
+                "allowOutportRename" : true,
+                "allowInportRename" : true
+              },
+              "componentInfo" : {
+                "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/ControlFlowOutput",
+                "projectName" : "ProphecySparkBasicsPython"
+              }
+            },
+            "bVRSuwc4G7pWE0lBlANab$$_9OaWHbHARdVNESdVqidY" : {
+              "id" : "bVRSuwc4G7pWE0lBlANab$$_9OaWHbHARdVNESdVqidY",
+              "component" : "Script",
+              "metadata" : {
+                "label" : "select_column_as_string",
+                "slug" : "select_column_as_string",
+                "x" : 320,
+                "y" : 120,
+                "phase" : 0,
+                "cache" : false,
+                "detailedStats" : false,
+                "isImported" : false
+              },
+              "ports" : {
+                "inputs" : [ {
+                  "id" : "NnH0byB2_7zg0pOf_3PHl$$WyMNJ6w4k7i5pO1zUHXB8",
+                  "slug" : "TableIterator_Input",
+                  "schema" : {
+                    "type" : "struct",
+                    "fields" : [ {
+                      "name" : "TEXT_COLUMN",
+                      "type" : "string",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    }, {
+                      "name" : "NULL_COLUMN",
+                      "type" : "void",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    } ]
+                  },
+                  "isStreaming" : false
+                } ],
+                "outputs" : [ {
+                  "id" : "m62vk90IBJklX7GNcCVMw$$krjFL5dUCW0M7rjRswz-B",
+                  "slug" : "out0",
+                  "schema" : {
+                    "type" : "struct",
+                    "fields" : [ {
+                      "name" : "col_name",
+                      "type" : "string",
+                      "nullable" : false,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    }, {
+                      "name" : "value",
+                      "type" : "string",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "mappings" : [ ],
+                        "tags" : [ ]
+                      }
+                    } ]
+                  },
+                  "isStreaming" : false
+                } ],
+                "selectedInputFields" : [ ],
+                "isCustomOutputSchema" : true,
+                "autoUpdateOnRun" : true
+              },
+              "properties" : {
+                "script" : "out0 = TableIterator_Input.select(\n    lit(Config.column).alias(\"col_name\"),\n    col(Config.column).cast(\"string\").alias(\"value\")\n)",
+                "scriptMethodHeader" : "def Script(spark: SparkSession, TableIterator_Input: DataFrame) -> DataFrame:",
+                "scriptMethodFooter" : "    return out0"
+              }
+            }
+          },
+          "componentInfo" : {
+            "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/TableIterator",
+            "projectName" : "ProphecySparkBasicsPython"
+          }
+        },
+        "c2Qs74RGMaIayvEWZSjMr$$2jvPTGkxHCXygjypbAnlN" : {
+          "id" : "c2Qs74RGMaIayvEWZSjMr$$2jvPTGkxHCXygjypbAnlN",
+          "component" : "Reformat",
+          "metadata" : {
+            "label" : "format_null_not_null_counts",
+            "slug" : "format_null_not_null_counts",
+            "x" : -360,
+            "y" : -140,
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false,
+            "isImported" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "N82_vYueM3Kz89u6cdp3x$$NtK4lHbOrJG_Lp0Nec4fW",
+              "slug" : "null_not_null_count_by_col_name",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "col_name",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "count_null",
+                  "type" : "long",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "count_not_null",
+                  "type" : "long",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "isStreaming" : false
+            } ],
+            "outputs" : [ {
+              "id" : "EZP8NOFcmmrhPy8cUMprl$$tX4kCyl78QBvm1kZljyM0",
+              "slug" : "out"
+            } ],
+            "selectedInputFields" : [ ],
+            "isCustomOutputSchema" : false,
+            "autoUpdateOnRun" : false
+          },
+          "properties" : {
+            "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+            "expressions" : [ {
+              "target" : "run_at",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "current_timestamp()"
+              },
+              "description" : ""
+            }, {
+              "target" : "col_name",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "col_name"
+              },
+              "description" : ""
+            }, {
+              "target" : "count_null",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "count_null"
+              },
+              "description" : ""
+            }, {
+              "target" : "count_not_null",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "count_not_null"
+              },
+              "description" : ""
+            } ],
+            "importString" : "",
+            "activeTab" : "expressions",
+            "columnsSelector" : [ "N82_vYueM3Kz89u6cdp3x$$NtK4lHbOrJG_Lp0Nec4fW##count_not_null", "N82_vYueM3Kz89u6cdp3x$$NtK4lHbOrJG_Lp0Nec4fW##count_null", "N82_vYueM3Kz89u6cdp3x$$NtK4lHbOrJG_Lp0Nec4fW##col_name" ]
+          },
+          "componentInfo" : {
+            "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/Reformat",
+            "projectName" : "ProphecySparkBasicsPython"
+          }
+        },
+        "FBDL8PVqCu0Io9HRzKqwW$$r8ekzLvoBdbQN9kK4Pj6h" : {
+          "id" : "FBDL8PVqCu0Io9HRzKqwW$$r8ekzLvoBdbQN9kK4Pj6h",
+          "component" : "Script",
+          "metadata" : {
+            "label" : "metadata_columns",
+            "slug" : "metadata_columns",
+            "x" : -1060,
+            "y" : -260,
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false,
+            "isImported" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "toEb1WjYwYJLKYdJbb-07$$qoT7jBNwFhae89aeXsgCD",
+              "slug" : "in0",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "TEXT_COLUMN",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "NULL_COLUMN",
+                  "type" : "void",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "isStreaming" : false
+            } ],
+            "outputs" : [ {
+              "id" : "D0AqZv0ytGjbvvELFSaHu$$i5XLuYfuOwnKjG4-Clz61",
+              "slug" : "out0",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "column",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "isStreaming" : false
+            } ],
+            "selectedInputFields" : [ ],
+            "isCustomOutputSchema" : true,
+            "autoUpdateOnRun" : true
+          },
+          "properties" : {
+            "script" : "out0 = spark.createDataFrame([[column] for column in in0.columns], schema=['column'])",
+            "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
+            "scriptMethodFooter" : "    return out0"
+          }
+        },
+        "yFjebsBXW_7SmqFK6u8gc$$oOyqdKct6s4zqqlD4eDKe" : {
+          "id" : "yFjebsBXW_7SmqFK6u8gc$$oOyqdKct6s4zqqlD4eDKe",
+          "component" : "Aggregate",
+          "metadata" : {
+            "label" : "null_not_null_count_by_col_name",
+            "slug" : "null_not_null_count_by_col_name",
+            "x" : -560,
+            "y" : -140,
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false,
+            "isImported" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "ALxYciHvGeaKCK_vittkZ$$A-vYEqfXwoZzxiv5dymzI",
+              "slug" : "in0",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "col_name",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "value",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "isStreaming" : false
+            } ],
+            "outputs" : [ {
+              "id" : "8a1cvB-dqqOMWgsGjI2HG$$FzVDyzvfsT9Q109z-PxH7",
+              "slug" : "out"
+            } ],
+            "selectedInputFields" : [ ],
+            "isCustomOutputSchema" : false,
+            "autoUpdateOnRun" : false
+          },
+          "properties" : {
+            "allIns" : false,
+            "doPivot" : false,
+            "aggregate" : [ {
+              "target" : "count_null",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "sum(if(value is null, 1, 0))"
+              },
+              "description" : "",
+              "_row_id" : "c_112"
+            }, {
+              "target" : "count_not_null",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "sum(if(value is not null, 1, 0))"
+              },
+              "description" : "",
+              "_row_id" : "c_113"
+            } ],
+            "allowSelection" : true,
+            "pivotColumn" : null,
+            "pivotValues" : [ ],
+            "activeTab" : "aggregate",
+            "columnsSelector" : [ "ALxYciHvGeaKCK_vittkZ$$A-vYEqfXwoZzxiv5dymzI##col_name" ],
+            "groupBy" : [ {
+              "target" : "col_name",
+              "expression" : {
+                "format" : "sql",
+                "expression" : "col_name"
+              },
+              "description" : "",
+              "_row_id" : "c_110"
+            } ]
+          },
+          "componentInfo" : {
+            "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/Aggregate",
+            "projectName" : "ProphecySparkBasicsPython"
+          }
+        },
+        "IHy45cTTpixhGP65M47Rm$$OLXyUUPr6vHacmHTTfQ6_" : {
+          "id" : "IHy45cTTpixhGP65M47Rm$$OLXyUUPr6vHacmHTTfQ6_",
+          "component" : "Target",
+          "metadata" : {
+            "label" : "dq_audits",
+            "slug" : "dq_audits",
+            "x" : -180,
+            "y" : -140,
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false,
+            "isImported" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "EpXhiZJw84b0D0hl358Im$$7a_I0iNftY6wB0GQPBmkQ",
+              "slug" : "null_not_null_count_by_col_name",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "run_at",
+                  "type" : "timestamp",
+                  "nullable" : false,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "col_name",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "count_null",
+                  "type" : "long",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "count_not_null",
+                  "type" : "long",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "isStreaming" : false
+            } ],
+            "outputs" : [ ],
+            "selectedInputFields" : [ ],
+            "isCustomOutputSchema" : false,
+            "autoUpdateOnRun" : false
+          },
+          "properties" : {
+            "datasetId" : "datasets/dq_audits"
+          }
+        }
+      }
+    },
+    "mAtv9pni" : {
+      "id" : "mAtv9pni",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "adds_null",
+        "slug" : "adds_null",
+        "x" : -360,
+        "y" : -200,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "dwGLb3yY",
+          "slug" : "deequ_test",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "input",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "csUNtxcc",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "TEXT_COLUMN",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "input"
+          },
+          "description" : ""
+        }, {
+          "target" : "NULL_COLUMN",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "NULL"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "dwGLb3yY##input" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "gK5z8xvUKyOFOAa4I2mqN$$MJz1vB9svzpxHkhdhQYW8" : {
+      "id" : "gK5z8xvUKyOFOAa4I2mqN$$MJz1vB9svzpxHkhdhQYW8",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "deequ_test",
+        "slug" : "deequ_test",
+        "x" : -560,
+        "y" : -200,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "G1i4QcUx1cnyINPqRp8-X$$qbFT8ZWgH17AJeHkcNsni",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/deequ_test"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  }
+}
