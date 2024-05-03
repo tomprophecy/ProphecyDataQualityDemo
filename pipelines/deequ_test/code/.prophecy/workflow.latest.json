@@ -4,12 +4,16 @@
       "gemBuilderVersion" : "v1"
     },
     "codeGenConfiguration" : {
-      "editableConfig" : true
+      "editableConfig" : true,
+      "plibVersion" : {
+        "mavenVersion" : "7.1.93",
+        "pyPiVersion" : "1.8.15"
+      }
     },
     "id" : "1",
     "uri" : "pipelines/deequ_test",
     "language" : "python",
-    "fabricId" : "8875",
+    "fabricId" : "9958",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -114,7 +118,7 @@
       "value" : 1000
     },
     "topLevelPackage" : "deequ_test",
-    "configurationVersion" : "v1"
+    "configurationVersion" : "v2"
   },
   "connections" : [ {
     "id" : "IEDcw8Sf",
@@ -505,7 +509,7 @@
                 "allowInportRename" : true
               },
               "componentInfo" : {
-                "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/ControlFlowInput",
+                "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.10&projectSubscriptionProjectId=12654&path=gems/ControlFlowInput",
                 "projectName" : "ProphecySparkBasicsPython"
               }
             },
@@ -571,7 +575,7 @@
                 "allowInportRename" : true
               },
               "componentInfo" : {
-                "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/ControlFlowOutput",
+                "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.10&projectSubscriptionProjectId=12654&path=gems/ControlFlowOutput",
                 "projectName" : "ProphecySparkBasicsPython"
               }
             },
@@ -655,7 +659,7 @@
             }
           },
           "componentInfo" : {
-            "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/TableIterator",
+            "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.10&projectSubscriptionProjectId=12654&path=gems/TableIterator",
             "projectName" : "ProphecySparkBasicsPython"
           }
         },
@@ -753,7 +757,7 @@
             "columnsSelector" : [ "N82_vYueM3Kz89u6cdp3x$$NtK4lHbOrJG_Lp0Nec4fW##count_not_null", "N82_vYueM3Kz89u6cdp3x$$NtK4lHbOrJG_Lp0Nec4fW##count_null", "N82_vYueM3Kz89u6cdp3x$$NtK4lHbOrJG_Lp0Nec4fW##col_name" ]
           },
           "componentInfo" : {
-            "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/Reformat",
+            "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.10&projectSubscriptionProjectId=12654&path=gems/Reformat",
             "projectName" : "ProphecySparkBasicsPython"
           }
         },
@@ -911,7 +915,7 @@
             } ]
           },
           "componentInfo" : {
-            "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/Aggregate",
+            "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.10&projectSubscriptionProjectId=12654&path=gems/Aggregate",
             "projectName" : "ProphecySparkBasicsPython"
           }
         },
@@ -1047,7 +1051,7 @@
         "columnsSelector" : [ "dwGLb3yY##input" ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.10&projectSubscriptionProjectId=12654&path=gems/Reformat",
         "projectName" : "ProphecySparkBasicsPython"
       }
     },

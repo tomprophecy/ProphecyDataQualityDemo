@@ -119,29 +119,42 @@ subgraphs:
     mode: batch
     createdAt: '2024-02-28 15:35:12'
 sqlModels: {}
+sqlSnapshots: {}
 sqlMacros: {}
 sqlSeeds: {}
 sqlSources: {}
 sqlUnreferencedSources: {}
 sqlPipeline: null
-dependencies: '[]'
+dependencies:
+- type: plibMaven
+  modifiedAt: '2024-05-03T16:22:39.33938Z'
+  name: plibMaven
+  version: 7.1.93
+  id: '1766302595'
+  createdAt: '2024-05-03T16:22:39.339282Z'
+- type: plibPypi
+  modifiedAt: '2024-05-03T16:22:39.339487Z'
+  name: plibPypi
+  version: 1.8.15
+  id: '816884476'
+  createdAt: '2024-05-03T16:22:39.339452Z'
 projectDependencies:
   '12654':
     projectUID: 12654
     projectName: ProphecySparkBasicsPython
     repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=
-    version: 0.2.4
+    version: 0.2.10
     isDefault: true
     author: null
-    createdAt: '2024-02-28 15:38:59'
+    createdAt: '2024-05-03 16:22:16'
   '12655':
     projectUID: 12655
     projectName: ProphecyWarehousePython
     repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12655.git&subPath=
-    version: 0.0.3
+    version: 0.0.5
     isDefault: true
     author: null
-    createdAt: '2024-02-28 15:40:05'
+    createdAt: '2024-05-03 16:22:18'
 flags:
   shouldAddDefaultDependenciesIfAbsent: true
 pipelineConfigurations: {}

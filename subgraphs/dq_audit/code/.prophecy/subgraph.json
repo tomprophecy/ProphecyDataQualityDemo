@@ -195,10 +195,10 @@
         } ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/Aggregate",
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.10&projectSubscriptionProjectId=12654&path=gems/Aggregate",
         "projectId" : "12654",
         "projectName" : "ProphecySparkBasicsPython",
-        "version" : "0.2.4"
+        "version" : "0.2.10"
       }
     },
     "nXZa-KsdAsyiyG0uhQZ7z" : {
@@ -332,10 +332,10 @@
             "allowInportRename" : true
           },
           "componentInfo" : {
-            "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/ControlFlowInput",
+            "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.10&projectSubscriptionProjectId=12654&path=gems/ControlFlowInput",
             "projectId" : "12654",
             "projectName" : "ProphecySparkBasicsPython",
-            "version" : "0.2.4"
+            "version" : "0.2.10"
           }
         },
         "dGoiAi35Yjk_Hw-4Dfw4c" : {
@@ -377,10 +377,10 @@
             "allowInportRename" : true
           },
           "componentInfo" : {
-            "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/ControlFlowOutput",
+            "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.10&projectSubscriptionProjectId=12654&path=gems/ControlFlowOutput",
             "projectId" : "12654",
             "projectName" : "ProphecySparkBasicsPython",
-            "version" : "0.2.4"
+            "version" : "0.2.10"
           }
         },
         "bVRSuwc4G7pWE0lBlANab" : {
@@ -440,10 +440,10 @@
         }
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/TableIterator",
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.10&projectSubscriptionProjectId=12654&path=gems/TableIterator",
         "projectId" : "12654",
         "projectName" : "ProphecySparkBasicsPython",
-        "version" : "0.2.4"
+        "version" : "0.2.10"
       }
     },
     "c2Qs74RGMaIayvEWZSjMr" : {
@@ -512,10 +512,10 @@
         "columnsSelector" : [ "N82_vYueM3Kz89u6cdp3x$$NtK4lHbOrJG_Lp0Nec4fW##count_not_null", "N82_vYueM3Kz89u6cdp3x$$NtK4lHbOrJG_Lp0Nec4fW##count_null", "N82_vYueM3Kz89u6cdp3x$$NtK4lHbOrJG_Lp0Nec4fW##col_name" ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.10&projectSubscriptionProjectId=12654&path=gems/Reformat",
         "projectId" : "12654",
         "projectName" : "ProphecySparkBasicsPython",
-        "version" : "0.2.4"
+        "version" : "0.2.10"
       }
     },
     "IHy45cTTpixhGP65M47Rm" : {
@@ -811,10 +811,10 @@
         "updated" : true,
         "currentDatasetId" : "datasets/dq_audits",
         "componentInfo" : {
-          "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/catalogTable",
+          "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.10&projectSubscriptionProjectId=12654&path=gems/catalogTable",
           "projectId" : "12654",
           "projectName" : "ProphecySparkBasicsPython",
-          "version" : "0.2.4"
+          "version" : "0.2.10"
         },
         "dataset" : {
           "mergeCondition" : null,

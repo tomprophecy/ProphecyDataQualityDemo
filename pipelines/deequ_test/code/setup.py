@@ -7,7 +7,7 @@ setup(
     package_data = {'prophecy_config_instances' : ['*.json', '*.py', '*.conf']},
     description = 'workflow',
     install_requires = [
-'pydeequ', 'prophecy-libs==1.8.7'],
+'pydeequ', 'prophecy-libs==1.8.15'],
     entry_points = {
 'console_scripts' : [
 'main = deequ_test.pipeline:main'], },
