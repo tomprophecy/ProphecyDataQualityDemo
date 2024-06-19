@@ -74,7 +74,7 @@
     "buildSystem" : "maven",
     "externalDependencies" : [ {
       "type" : "coordinates",
-      "modifiedAt" : "2024-06-19T20:37:50.333Z",
+      "modifiedAt" : "2024-06-19T20:48:33.801Z",
       "coordinates" : "com.amazon.deequ:deequ:2.0.7-spark-3.3",
       "name" : "mvn_deequ",
       "description" : "",
