@@ -6,7 +6,7 @@ description: Elevate your data quality and governance standards with our cutting
   auditing subgraph function. Join the community of users who trust our library to
   safeguard their data, drive informed decision-making, and stay ahead in the data-driven
   world.
-version: '1.1'
+version: 1.0.0
 author: maciej+demo7@prophecy.io
 language: python
 buildSystem: ''
