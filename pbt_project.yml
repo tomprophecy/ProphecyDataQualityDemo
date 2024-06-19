@@ -71,7 +71,7 @@ gemContainer:
       category: Transform
       subCategory: ''
       description: null
-      author: maciej+demo7@prophecy.io
+      author: tom@prophecy.io
       mode: batch
       files:
       - maciejdemos_dataquality/gems/Deequ.py
@@ -89,8 +89,8 @@ gemContainer:
         addToPipeline: true
         editable: true
       - type: coordinates
-        modifiedAt: '2024-02-28T05:11:37.911Z'
-        coordinates: com.amazon.deequ:deequ:2.0.1-spark-3.2
+        modifiedAt: '2024-06-19T20:37:50.333Z'
+        coordinates: com.amazon.deequ:deequ:2.0.7-spark-3.3
         name: mvn_deequ
         description: ''
         enabled: true
